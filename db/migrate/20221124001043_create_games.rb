@@ -3,6 +3,7 @@ class CreateGames < ActiveRecord::Migration[5.2]
     create_table :games do |t|
       t.string :map
       t.string :mode
+      t.string :time
       t.boolean :win
       t.bigint :session_id
     end

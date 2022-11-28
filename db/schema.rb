@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_23_235312) do
+ActiveRecord::Schema.define(version: 2022_11_24_001043) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2022_11_23_235312) do
   create_table "games", force: :cascade do |t|
     t.string "map"
     t.string "mode"
+    t.string "time"
     t.boolean "win"
     t.bigint "session_id"
   end
